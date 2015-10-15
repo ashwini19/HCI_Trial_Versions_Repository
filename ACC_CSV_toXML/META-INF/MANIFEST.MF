@@ -1,0 +1,60 @@
+Manifest-Version: 1.0
+SAP-BundleType: IntegrationFlow
+Bundle-ClassPath: .
+Bundle-Version: 1.0.0
+SAP-NodeType: IFLMAP
+Bundle-Name: ACC_CSV_toXML
+Bundle-ManifestVersion: 2
+SAP-ArtifactId: f44f8206-84dd-451d-b7e3-ba7e26e38eb9
+Bundle-SymbolicName: ACC_CSV_toXML; singleton:=true
+Import-Package:  org.apache.wss4j.common.crypto, com.sap.it.rt.csvtoxm
+ l.converter, com.sap.esb.camel.message.storage.api, com.sap.it.op.age
+ nt.trace, com.sap.esb.webservice.security.crypto.api, com.sap.esb.web
+ service.policy.alternative.selector, org.apache.cxf.ws.security.wss4j
+ , org.apache.ws.security.components.crypto, javax.security.auth.callb
+ ack, com.sap.esb.camel.jdbc.idempotency.reorg, com.sap.it.iflow.model
+ .runtime, com.sap.it.iflow.model, com.sap.sod.utils.soap.processors, 
+ com.sap.esb.camel.jdbc.inprogress.repository, com.sap.esb.camel.jdbc.
+ idempotency.repository, com.sap.esb.camel.security.cms, org.apache.ca
+ mel.processor.idempotent.jdbc, org.apache.camel.spi, com.sap.esb.came
+ l.endpoint.configurator.api, com.sap.it.op.ed, com.sap.esb.webservice
+ .authorization.supplier.api, org.apache.cxf.interceptor.security, com
+ .sap.esb.camel.mpl.access, com.sap.esb.camel.eip.splitter, com.sap.it
+ .op.agent.ed.plugins.camel.api, com.sap.esb.camel.xmljson, net.sf.sax
+ on.xpath, net.sf.saxon,com.sap.esb.application.services.cxf.intercept
+ or,com.sap.esb.security,com.sap.it.op.agent.api,com.sap.it.op.agent.c
+ ollector.camel,com.sap.it.op.agent.collector.cxf,com.sap.it.op.agent.
+ mpl,com.sap.sod.utils.cxf.interceptors,com.sap.sod.utils.encoding.pro
+ cessors,com.sap.sod.utils.idoc.soap,com.sap.sod.utils.soap,com.sap.so
+ d.utils.idoc.soap.processors,javax.jms,javax.jws,javax.wsdl,javax.xml
+ .bind.annotation,javax.xml.namespace,javax.xml.ws,org.apache.camel;ve
+ rsion="2.8",org.apache.camel.builder;version="2.8",org.apache.camel.b
+ uilder.xml;version="2.8",org.apache.camel.component.cxf,org.apache.ca
+ mel.model;version="2.8",org.apache.camel.processor;version="2.8",org.
+ apache.camel.processor.aggregate;version="2.8",org.apache.camel.sprin
+ g.spi;version="2.8",org.apache.commons.logging,org.apache.cxf.binding
+ ,org.apache.cxf.binding.soap,org.apache.cxf.binding.soap.spring,org.a
+ pache.cxf.bus,org.apache.cxf.bus.resource,org.apache.cxf.bus.spring,o
+ rg.apache.cxf.buslifecycle,org.apache.cxf.catalog,org.apache.cxf.conf
+ iguration.jsse,org.apache.cxf.configuration.spring,org.apache.cxf.end
+ point,org.apache.cxf.headers,org.apache.cxf.interceptor,org.apache.cx
+ f.management.counters,org.apache.cxf.message,org.apache.cxf.phase,org
+ .apache.cxf.resource,org.apache.cxf.service.factory,org.apache.cxf.se
+ rvice.model,org.apache.cxf.transport,org.apache.cxf.transport.common.
+ gzip,org.apache.cxf.transport.http,org.apache.cxf.transport.http.poli
+ cy,org.apache.cxf.workqueue,org.apache.cxf.ws.rm.persistence,org.apac
+ he.cxf.wsdl11,org.osgi.framework;version="1.6.0",org.osgi.service.blu
+ eprint;version="[1.0.0,2.0.0)",org.slf4j;version="1.6",org.springfram
+ ework.beans.factory.config;version="3.0",com.sap.aii.ib.bom.flib.type
+ s,com.sap.aii.mapping.api,com.sap.aii.mappingtool.flib3,com.sap.aii.m
+ appingtool.flib7,com.sap.aii.mappingtool.tf3,com.sap.aii.mappingtool.
+ tf3.rt,com.sap.aii.mappingtool.tf7,com.sap.aii.mappingtool.tf7.rt,com
+ .sap.aii.mappingtool.tfapi,com.sap.esb.webservice.audit.log
+Import-Service:  com.sap.esb.camel.security.cms.SignatureSplitter;mult
+ iple:=false, org.apache.cxf.ws.rm.persistence.RMStore;multiple:=false
+ , javax.sql.DataSource;multiple:=false;filter="(dataSourceName=defaul
+ t)", com.sap.esb.security.TrustManagerFactory;multiple:=false,  com.s
+ ap.esb.security.KeyManagerFactory;multiple:=false, com.sap.esb.camel.
+ endpoint.configurator.api.EndpointConfigurator;multiple:=false;filter
+ ="(endpointType=SFTP)",com.sap.esb.webservice.audit.log.AuditLogger 
+
